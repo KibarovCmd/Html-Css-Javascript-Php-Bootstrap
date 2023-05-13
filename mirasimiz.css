@@ -1,0 +1,32 @@
+.bayrakDikmeResmi:hover{
+    padding: 5%;
+}
+.bayrakDikmeResmi2:hover{
+    padding: 5%;
+}
+.bayrakDikmeResmi3:hover{
+    padding: 5%;
+}
+.bayrakDikmeResmi{
+    object-fit: cover;
+}
+.bayrakDikmeResmi2{
+    object-fit: cover;
+}
+.bayrakDikmeResmi3{
+    object-fit: cover;
+}
+.youtubevideo:hover{
+    padding: 5%;
+}
+.linkyolu{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+.liste{
+    list-style-type:lower-roman;
+}
+.liste2{
+    list-style-type: square;
+}

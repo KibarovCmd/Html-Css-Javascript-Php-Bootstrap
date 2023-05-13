@@ -1,0 +1,41 @@
+.rowsinifi{
+    padding-top: 200px;
+}
+.colsinifi{
+    text-align: center;
+}
+.kullaniciadiverigirisi{
+    width: 50%;
+}
+.sifreverigirisi{
+    width: 50%
+}
+.kullaniciadiverigirisi:focus{
+    width: 55%;
+}
+.sifreverigirisi:focus{
+    width: 55%
+}
+.verigonderimioutput{
+    margin-top: 2%;
+    width: 35%;
+    background-color: #f44336;
+    border-radius: 5px;
+    outline-style: none;
+    outline-offset: 0px;
+    border-width: 0px;
+    height: 40px;
+    font-weight: bolder;
+    transition: width 1s;
+}
+.verigonderimioutput:hover{
+    margin-top: 2%;
+    width: 45%;
+    background-color: #E1392C;
+    border-radius: 5px;
+    outline-style: none;
+    outline-offset: 0px;
+    border-width: 0px;
+    height: 40px;
+    width: 214px;
+}
