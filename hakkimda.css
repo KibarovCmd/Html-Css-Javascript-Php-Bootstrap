@@ -1,5 +1,12 @@
 #hakkimdakiler{
-    background-color: whitesmoke;
     margin-top: 1%;
     text-align: center;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+
+}
+.resim{
+    object-fit: cover;
+}
+.resim:hover{
+    padding: 5%;
 }
