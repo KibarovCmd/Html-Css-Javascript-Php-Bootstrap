@@ -1,0 +1,32 @@
+.imageSource {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.newButtonClass {
+    width: 45%;
+    background-color: #f44336;
+    border-radius: 5px;
+    outline-style: none;
+    outline-offset: 0px;
+    border-width: 0px;
+    height: 40px;
+    font-weight: bolder;
+    margin-bottom: 35%;
+}
+    
+.newButtonClass:hover {
+    width: 45%;
+    background-color: #E1392C;
+    border-radius: 5px;
+    outline-style: none;
+    outline-offset: 0px;
+    border-width: 0px;
+    height: 40px;
+    font-weight: bolder;
+    margin-bottom: 35%;
+}
+.pSinifi{
+    text-align: center;
+}

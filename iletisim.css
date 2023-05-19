@@ -1,0 +1,111 @@
+.rowsinifi {
+    padding-top: 40px;
+}
+
+.adi,
+.email {
+    margin-right: 20px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.soyadi,
+.sifre {
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.adi:focus,.email:focus{
+    border: 3px solid #555;
+}
+.soyadi:focus,.sifre:focus{
+    border: 3px solid #555;
+}
+
+.label1 {
+    margin-right: 164px;
+    margin-bottom: 5px;
+}
+.label2{
+    margin-bottom: 5px;
+    margin-right: 20px ;
+}
+
+.label3,
+.label6 {
+    margin-right: 20px;
+}
+
+.label4,
+.label7 {
+    margin-left: 5px;
+    margin-right: 12px;
+}
+
+.label5,
+.label8 {
+    margin-left: 5px;
+}
+
+.label9 {
+    margin-right: 152px;
+}
+
+.label10 {
+    margin-right: 10px;
+}
+
+.textarea {
+    resize: none;
+}
+
+.button1 {
+    margin-right: 66px;
+    background-color: #f44336;
+    border-radius: 5px;
+    outline-style: none;
+    outline-offset: 0px;
+    border-width: 0px;
+    height: 40px;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.button1:hover {
+    margin-right: 66px;
+    background-color: #E1392C;
+    border-radius: 5px;
+    outline-style: none;
+    outline-offset: 0px;
+    border-width: 0px;
+    height: 40px;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.button2 {
+    width: 100%;
+    background-color: #f44336;
+    border-radius: 5px;
+    outline-style: none;
+    outline-offset: 0px;
+    border-width: 0px;
+    height: 40px;
+    font-weight: bolder;
+}
+
+.button2:hover {
+    width: 100%;
+    background-color: #E1392C;
+    border-radius: 5px;
+    outline-style: none;
+    outline-offset: 0px;
+    border-width: 0px;
+    height: 40px;
+    font-weight: bolder;
+}
