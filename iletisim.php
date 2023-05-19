@@ -41,26 +41,42 @@
               </li>
               <li class="nav-item">
                         <a class="nav-link" href="iletisim2.html">İLETİŞİM2</a>
-                </li>
+                    </li>
             </ul>
           </div>
         </div>
       </nav>
       <div class="alert alert-danger" role="alert">
-  <h4 class="alert-heading">Kullanıcı Adı Ve Şifre Kabul Edildi!</h4>
+  <h4 class="alert-heading">Gönderim Başarılı!</h4>
   <p>            <?php
-if($_POST["kullaniciadi"] == "b221210587@sakarya.edu.tr" && $_POST["sifre"] == "b221210587")
-{
-    echo "Hoşgeldiniz ". strtoupper($_POST["sifre"]);
-}
-else
-{
-    header("Location: login.html");
-}
-?>
-            </p>
+            echo "Adı: ". $_POST["adi"]. "&nbsp;"."&nbsp;" . "Soyadı: ". $_POST["soyadi"]. "&nbsp;" ."&nbsp;". "E-mail: ". $_POST["email"]. "&nbsp;" ."&nbsp;"."Şifre: ". $_POST["sifre"] . "&nbsp;"."&nbsp;";
+            if($_POST["buton"] == "erkek")
+            {
+                echo "Cinsiyet: Erkek";
+            }
+            else if($_POST["buton"] == "kadin")
+            {
+                echo "Cinsiyet: Kadın";
+            }
+            echo "&nbsp;"."&nbsp;". "Girilen Sınavlar: ";
+            if(empty($_POST["ielts"]) || empty($_POST["toefl"]))
+            {
+                if(empty($_POST["ielts"]) && !(empty($_POST["toefl"])))
+                {
+                    echo "Toefl";
+                }
+                else if(!(empty($_POST["ielts"])) && empty($_POST["toefl"]))
+                {
+                    echo "Ielts";
+                }
+            }
+            else
+            {
+                echo "Ielts/Toefl";
+            }
+            ?> </p>
   <hr>
-  <p class="mb-0">Kullanıcı adınız ve şifrenize dikkat ediniz.</p>
+  <p class="mb-0">Post Ettiğiniz Değerlere Dikkat Ediniz.</p>
 </div>
   </body>
 </html>

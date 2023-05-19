@@ -1,7 +1,6 @@
 #hakkimdakiler{
     margin-top: 1%;
     text-align: center;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
 
 }
 .resim{
@@ -9,4 +8,7 @@
 }
 .resim:hover{
     padding: 5%;
+}
+.baslik{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

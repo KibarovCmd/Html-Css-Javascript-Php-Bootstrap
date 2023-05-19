@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="iletisim2.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="resim15.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>İskender Musaoğlu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimda.html">HAKKIMDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sehrim.html">ŞEHRİM</a>
+                    </li>
+                    <a class="nav-link" href="mirasimiz.html">MİRASIMIZ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ilgialanlari.html">İLGİ ALANLARIM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">LOGİN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İLETİŞİM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="iletisim2.html">İLETİŞİM2</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row rowSinifi mx-auto">
+        <div class="col-4">
+
+        </div>
+        <div class="col-4">
+            <div ng-controller="myCtrl">
+
+                <form name="myForm" method="post" ng-submit="submitForm(myForm.$valid)" novalidate>
+                    <div class="row align-items-center ">
+                        <label for="name"><strong>İsminiz:</strong></label>
+                        <input class="yazi" type="text" name="name" ng-model="name" required>
+                        <br>
+                        <span ng-show="myForm.name.$touched && myForm.name.$error.required">İsim boş bırakılmaz.</span>
+
+                    </div>
+                    <hr>
+                    <div class="row align-items-center ">
+                        <label for="email"><b>Email Adresiniz: </b> </label>
+                        <input class="yazi" type="email" name="email" ng-model="email" required>
+                        <br>
+                        <span ng-show="myForm.email.$touched && myForm.email.$error.required">Email boş
+                            bırakılmaz.</span>
+                        <span ng-show="myForm.email.$touched && myForm.email.$error.email">Email yanlış girildi.</span>
+
+                    </div>
+                    <hr>
+                    <div class="row align-items-center ">
+                        <label for="phone"><b>Telefon Numarası: </b> </label>
+                        <input class="yazi" type="tel" name="phone" ng-model="phone" pattern="[0-9]{10}">
+                        <br>
+                        <span ng-show="myForm.phone.$touched && myForm.phone.$error.pattern">Telefon numarası yanlış
+                            girildi.</span>
+
+                    </div>
+                    <hr>
+                    <div class="row align-items-center">
+                        <div class="col-7">
+                        <label for="gender"><b>Cinsiyetiniz: </b></label>
+                        </div>
+                        <div class="col-2">
+                        <input type="radio" name="gender" ng-model="gender" value="male" required>Erkek
+                        </div>
+                        <div class="col-3">
+                        <input type="radio" name="gender" ng-model="gender" value="female" required>Kadın
+                        </div>
+                        <span ng-show="myForm.gender.$touched && myForm.gender.$error.required">Lütfen cinsiyet
+                            seçiniz.</span>
+                    </div>
+                    <hr>
+                    <div class="row d-flex">
+                        <div class="col-6">
+                            <label for="interests"><b>Girilen İngilizce Sınavlar: </b></label>
+                        </div>
+                        <div class="col-2">
+                            <input type="checkbox" name="interests1" ng-model="interests.movies">Ielts
+                        </div>
+                        <div class="col-2">
+                            <input type="checkbox" name="interests2" ng-model="interests.music">Toefl
+                        </div>
+                        <div class="col-2">
+                            <input type="checkbox" name="interests3" ng-model="interests.sports">Cde
+                        </div>
+                        <span ng-show="!(interests.movies || interests.music || interests.sports)">Lütfen en az bir
+                            sınav
+                            seçiniz.</span>
+                        <br>
+
+                    </div>
+                    <hr>
+                    <input class="buttonone" type="submit" value="Gönder">
+                    <hr>
+                    <input class="buttonone" type="reset" value="Temizle">
+                </form>
+            </div>
+        </div>
+        <div class="col-4">
+
+        </div>
+    </div>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function ($scope, $http) {
+            $scope.submitForm = function (isValid) {
+                if (isValid) {
+                    // Redirect to try.php
+                    document.forms["myForm"].action = "try.php";
+                    document.forms["myForm"].submit();
+                }
+            };
+        });
+    </script>
+
+</body>
+
+</html>
